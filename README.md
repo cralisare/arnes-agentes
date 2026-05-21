@@ -86,6 +86,8 @@ cp /ruta/al/repo/global/MEMORY.md ./MEMORY.md
 
 A partir de ahí, el agente crea archivos `feedback_*.md` / `project_*.md` / `reference_*.md` según haga falta y los indexa en `MEMORY.md`.
 
+Para tener el formato exacto de cada tipo de archivo a mano, hay esqueletos en [`global/memory-templates/`](global/memory-templates/) — uno por tipo (`user`, `feedback`, `project`, `reference`) con frontmatter YAML y patrón `Why:` / `How to apply:` listos para rellenar.
+
 > Nota: Claude Code tiene además un sistema oficial de "auto-memory" en `~/.claude/projects/<proyecto>/memory/` que gestiona el propio agente. Coexiste con `MEMORY.md` sin conflicto.
 
 ### 4. Sistema de diseño (opcional)
