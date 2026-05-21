@@ -4,7 +4,7 @@
 >
 > Este archivo es un **mapa**, no una biblia. Lee solo las secciones que necesites para la tarea concreta. Si una sección está vacía o no aplica, bórrala.
 
-> **Para Claude Code**: este archivo se llama `AGENTS.md` por convención multi-agente. Para que se auto-cargue, crea el symlink: `ln -s AGENTS.md CLAUDE.md`.
+> Esta plantilla se nombra `AGENTS.md` por convención multi-agente (Codex, Cursor, Gemini). Para que Claude Code la auto-cargue, crea un symlink `CLAUDE.md → AGENTS.md`, o simplemente renómbrala a `CLAUDE.md` si solo usas Claude.
 
 ---
 
@@ -57,20 +57,18 @@
 
 - **Idiomas**: [ADAPTAR: ej. variables y funciones en inglés; strings de usuario en español]
 - **Naming**: [ADAPTAR: ej. camelCase JS, snake_case Python]
-- **Comentarios**: solo donde aportan. No comentar el "qué" si los nombres ya lo dicen.
+- **Comentarios**: sin comentarios por defecto. Solo donde el porqué no se deduce del código.
 - **Estilo**: [ADAPTAR: ej. seguir el código existente; no introducir abstracciones especulativas]
 
 ---
 
-## Reglas duras
+## Reglas específicas del proyecto
 
-- **Ir al grano**. No repetir lo que ya he dicho.
-- **Cambios quirúrgicos**: tocar solo lo necesario para la tarea. No "mejorar" código adyacente.
-- **Simplicidad primero**: el mínimo código que resuelve el problema. Sin flexibilidad no solicitada.
-- **Si una decisión tiene trade-offs**, dame el criterio — no me des dos opciones para que elija yo.
-- **Secretos**: nunca mostrar valores de API keys, tokens, contraseñas, ni anon keys, en el chat. Antes de leer `.env` / `.envrc` / `credentials.*`, avisar.
-- **Si te bloqueas o algo no cuadra**, para y dilo antes de seguir.
-- [ADAPTAR: añadir reglas específicas del proyecto si las hay]
+> Las reglas generales (ir al grano, cambios quirúrgicos, simplicidad, trade-offs, secretos, pararse cuando algo no cuadra, etc.) vienen del `CLAUDE.md` global. Aquí solo se documentan las **específicas de este proyecto**.
+
+- [ADAPTAR: regla específica del proyecto, ej. "No tocar `data.json` sin revisar el schema."]
+- [ADAPTAR: regla específica, ej. "Antes de modificar `style.css`, leer `DESIGN.md`."]
+- [ADAPTAR: …]
 
 ---
 

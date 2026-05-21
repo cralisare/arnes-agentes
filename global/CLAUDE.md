@@ -81,6 +81,19 @@ Para tareas multi-paso, enuncia un plan breve con verificación por paso.
 
 Si estás creando un diseño, sé consistente en toda la aplicación. No cambies de estilo en medio del proyecto. Si no estás seguro de cómo hacerlo, pregunta.
 
+## Memoria persistente
+
+Cuando descubras hechos no obvios sobre un proyecto, guárdalos en archivos del repo. Cuatro tipos:
+
+- `user_*.md` — perfil del usuario en el contexto de ese proyecto.
+- `feedback_*.md` — reglas aprendidas, qué funciona, qué no.
+- `project_*.md` — estado, decisiones, deadlines.
+- `reference_*.md` — URLs, infra, recursos externos.
+
+Cada uno con frontmatter YAML (`name`, `description`, `type`) y cuerpo con `**Why:**` (motivación) + `**How to apply:**` (cuándo aplica).
+
+Si el proyecto tiene `MEMORY.md` en raíz, es el índice — léelo al arrancar.
+
 ## Cadena de mando
 
 Si un `CLAUDE.md` o `AGENTS.md` de proyecto contradice este global, manda el de proyecto. Este archivo da contexto por defecto; el proyecto define excepciones específicas.
